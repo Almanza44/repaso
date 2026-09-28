@@ -1,5 +1,7 @@
-//
-const statusElement = document.querySelector("[data-app-status]");
-if (statusElement) {
-    statusElement.textContent = "Laravel, JavaScript y Vite están funcionando.";
-}
+
+
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();
