@@ -2,10 +2,12 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [AuthenticatedSessionController::class, 'create'])
+    ->name('login');
+
+Route::post('/', [AuthenticatedSessionController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -3,7 +3,7 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <form method="POST" action="/index.php/login">
+    <form method="POST" action="/">
         @csrf
 
         <!-- Email Address -->
