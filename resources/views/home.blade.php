@@ -25,6 +25,10 @@
         </span>
     </section>
 
+    <a href="/index.php/login" style="display:inline-block; padding:10px 20px; background:#1f2937; color:white; border-radius:6px; text-decoration:none;">
+    Iniciar sesión
+    </a>
+
     <!-- ============================================
          SECCIÓN FEATURES (CARACTERÍSTICAS)
          ============================================ -->
