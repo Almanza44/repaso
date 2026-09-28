@@ -54,7 +54,7 @@ RUN setcap -r /usr/local/bin/frankenphp
         
 # Copiar el código fuente de la aplicación
 COPY . .
-
+COPY conf/nginx/nginx-site.conf /etc/nginx/sites-available/default
 # Copiar los artefactos construidos desde las etapas anteriores
 COPY --from=vendor /app/vendor ./vendor
 COPY --from=assets /app/public/build ./public/build
